@@ -1,0 +1,31 @@
+@use '@/scss/variables/main.scss';
+
+.poke__menu {
+  background-color: tomato;
+  grid-column: 1;
+  padding: 5.3rem 0;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    li {
+      color: main.$gray_700;
+      text-transform: capitalize;
+      margin: 0.25rem;
+      padding: 1px 16px;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      // background:
+      //   selectedType === type.url ? '#1e40af' : 'transparent',
+      // color: selectedType === type.url ? '#18181b' : '#fafafa',
+      cursor: pointer;
+    }
+  }
+}

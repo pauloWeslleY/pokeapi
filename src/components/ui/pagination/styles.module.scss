@@ -1,0 +1,33 @@
+@use '@/scss/variables/main.scss';
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 0.455rem;
+
+  color: main.$gray_700;
+
+  button {
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 0.55rem;
+
+    padding: 0.25rem;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.3rem;
+
+    color: main.$blue_500;
+
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      color: main.$blue_300;
+      border: 2px solid main.$blue_300;
+    }
+  }
+}

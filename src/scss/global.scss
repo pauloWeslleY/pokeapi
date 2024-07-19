@@ -1,0 +1,34 @@
+@use './variables/main.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  ::-webkit-scrollbar {
+    width: 0.765rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: main.$gray_500;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: main.$red_400;
+    border-radius: 2.4rem;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: main.$gray_100;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1345px;
+  margin: 0 auto;
+}
